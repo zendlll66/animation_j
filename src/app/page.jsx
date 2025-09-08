@@ -15,10 +15,10 @@ const page = () => {
   }
 
   return (
-    <div className='grid grid-cols-4 grid-rows-1 justify-center items-center  h-vh w-full overflow-y-hidden'>
+    <div className='grid grid-cols-1 md:grid-cols-4 md:grid-rows-1  justify-center items-center  md:h-vh w-full overflow-y-hidden'>
       <motion.div
         onClick={() => handleActive(1)}
-        className={`space-y-10 justify-center flex flex-col p-20 h-screen ${active === 1 ? 'bg-orange-400' : 'bg-white'
+        className={`space-y-10 justify-center items-center w-full h-full min-h-screen flex flex-col  p-20  ${active === 1 ? 'bg-orange-400' : 'bg-white'
           }`}
         whileHover={{ scale: 1.02 }}
         transition={{ 
@@ -78,7 +78,7 @@ const page = () => {
       </motion.div>
       <motion.div
         onClick={() => handleActive(2)}
-        className={`space-y-10 justify-center flex flex-col p-20 h-screen ${active === 2 ? 'bg-[#530D25]' : 'bg-white'
+        className={`space-y-10 justify-center items-center w-full h-full min-h-screen flex flex-col  p-20  ${active === 2 ? 'bg-[#530D25]' : 'bg-white'
           }`}
         whileHover={{ scale: 1.02 }}
         transition={{ 
@@ -138,7 +138,7 @@ const page = () => {
       </motion.div>
       <motion.div
         onClick={() => handleActive(3)}
-        className={`space-y-10 justify-center flex flex-col p-20 h-screen ${active === 3 ? 'bg-orange-400' : 'bg-white'
+        className={`space-y-10 justify-center items-center w-full h-full min-h-screen flex flex-col p-20  ${active === 3 ? 'bg-orange-400' : 'bg-white'
           }`}
         whileHover={{ scale: 1.02 }}
         transition={{ 
@@ -198,7 +198,7 @@ const page = () => {
       </motion.div>
       <motion.div
         onClick={() => handleActive(4)}
-        className={`space-y-10 justify-center flex flex-col p-20 h-screen ${active === 4 ? 'bg-[#AD191B]' : 'bg-white'
+        className={`space-y-10 justify-center items-center w-full h-full min-h-screen flex flex-col  p-20  ${active === 4 ? 'bg-[#AD191B]' : 'bg-white'
           }`}
         whileHover={{ scale: 1.02 }}
         transition={{ 
